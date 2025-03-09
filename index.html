@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HappyMinds - Healthy Minds,Happy Life!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>HappyMinds</h1>
+      <p>Healthy Minds,Happy Life!</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#therapists">Therapists</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <h2>Empowering Your Mental Wellbeing</h2>
+      <p>Happy Minds is a holistic mental health app designed to support emotional well-being through engaging tools and personalized experiences.</p>
+      
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p>Happy Minds offers a variety of features to help you prioritize your mental health.</p>
+        <div class="services">
+          <div class="service">
+            <h3>Mental Wellness</h3>
+            <div class="mental-wellness-features">
+              <h4>Affirmations</h4>
+              <p>Positive statements you repeat to build confidence and a growth mindset. They help you focus on your strengths and motivate you to achieve your goals.</p>
+              <ul>
+                <li>I am capable of achieving my goals.</li>
+                <li>I am worthy of love and respect.</li>
+                <li>I am strong and resilient.</li>
+                <li>I am grateful for my health and well-being.</li>
+                <li>I am learning and growing every day.</li>
+                <li>I am proud of myself and my accomplishments.</li>
+                <li>I am confident in my abilities.</li>
+                <li>I am kind to myself.</li>
+                <li>I am worthy of happiness.</li>
+                <li>I am grateful for the present moment.</li>
+                <li>I am surrounded by love and support.</li>
+                <li>I am grateful for the opportunity to learn and grow.</li>
+                <li>I am in control of my thoughts and emotions.</li>
+                <li>I am grateful for the people in my life.</li>
+              </ul>
+
+              <h4>Gratitude Journaling</h4>
+              <p>A practice of writing down things you're thankful for daily. It boosts happiness, shifts focus to the positive, and cultivates a sense of contentment.</p>
+              <textarea id="gratitude-journal" rows="5" cols="30" placeholder="Enter your gratitude entries here..."></textarea>
+
+              <h4>Mood Meter</h4>
+              <p>How are you feeling today?</p>
+              <form id="mood-meter-form">
+                <input type="radio" id="happy" name="mood" value="happy">
+                <label for="happy">Happy</label><br>
+
+                <input type="radio" id="sad" name="mood" value="sad">
+                <label for="sad">Sad</label><br>
+
+                <input type="radio" id="angry" name="mood" value="angry">
+                <label for="angry">Angry</label><br>
+
+                <input type="radio" id="anxious" name="mood" value="anxious">
+                <label for="anxious">Anxious</label><br>
+
+                <input type="radio" id="calm" name="mood" value="calm">
+                <label for="calm">Calm</label><br>
+
+                <input type="radio" id="stressed" name="mood" value="stressed">
+                <label for="stressed">Stressed</label><br>
+
+                <input type="radio" id="neutral" name="mood" value="neutral">
+                <label for="neutral">Neutral</label><br>
+
+                <button type="button" id="mood-submit">Submit</button>
+              </form>
+              <p id="mood-message"></p> 
+            </div>
+          </div>
+          <div class="service">
+            <h3>Physical Wellness</h3>
+            <ul>
+              <li>Physical Exercise Videos: <a href="https://youtu.be/t9F9gZg42NM?si=Tqgo43B-fM9xAGth" target="_blank">Exercise Video</a></li> 
+              <li>Yoga Videos: <a href="https://youtu.be/COp7BR_Dvps?si=2oY5aS-i4GwojmQX" target="_blank">Yoga Video</a></li> 
+              <li>Meditation Videos: <a href="https://youtu.be/inpok4MKVLM?si=WepjOOraSBAv-B5d" target="_blank">Meditation Video</a></li> 
+            </ul>
+          </div>
+          <div class="service">
+            <h3>Community</h3>
+            <p>Find like-minded individuals with MindMatch and connect in a safe, supportive environment.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScrNxNvRn2Rvp9Dz6NKp-gpGHi3yZ_h-zYYvs5y1vAPZ_dXkw/viewform?usp=header" target="_blank">Take the MindMatch Survey</a> 
+            <p>Once you submit the survey, we'll help you find a community with similar interests.</p>
+          </div>
+          <div class="service">
+            <h3>Talk to a Professional</h3>
+            <p>Connect with experienced therapists for personalized guidance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="therapists">
+      <div class="container">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+          <label for="therapist">Select Therapist:</label>
+          <select id="therapist" name="therapist">
+            <option value="therapist1">Dr. Sayee Sharma</option>
+            <option value="therapist2">Dr. Kruthi Roy</option>
+            <option value="therapist3">Dr. Arushi Rao</option>
+            <option value="therapist4">Dr. Shruthi Singh</option>
+            <option value="therapist5">Dr. Pragya Bhide</option>
+          </select><br><br>
+
+          <div id="therapist-details"></div> 
+
+          <label for="date">Select Date:</label>
+          <input type="date" id="date" name="date"><br><br>
+
+          <label for="time">Select Time:</label>
+          <input type="time" id="time" name="time"><br><br>
+
+          <button type="submit">Book Appointment</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Happy Minds</h2>
+        <p>Happy Minds is a holistic mental health app designed to support emotional well-being through engaging tools and personalized experiences. 
+          Our mission is to empower individuals to prioritize their mental well-being through personalized tools, supportive communities, and professional guidance.</p>
+        <p><b>Core Features:</b></p>
+        <ul>
+          <li>Mood Tracking & Journaling</li>
+          <li>MindMatch Community</li>
+          <li>Professional Guidance</li>
+          <li>Physical Wellness Activities</li>
+        </ul>
+        <p><b>Why Choose HappyMinds?</b></p>
+        <p>HappyMinds blends self-care, emotional support, and expert resources in a single platform, making mental wellness accessible to all.</p>
+        <p><b>How It Works:</b></p>
+        <p>Sign up, explore wellness tools, join the community, and track your progress.</p>
+        <p>Commitment to Privacy & Safety:</p>
+        <p>Your privacy matters. We ensure secure data handling and promote a safe, respectful space for all users.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Name: Happy Minds</p>
+        <p>Address: BMS Instituete of Technology,Avalahalli,Yelahanka New Town,Bengaluru,Karnataka,India,560064</p>
+        <p>Co-founders: Bhoomi H S, C G Rachana, Jovika Sujith, Deepthi BR</p>
+        <p>Phone: 8792822830, 8475939847</p>
+        <p>Connect with us:</p>
+        <ul>
+          <li><a href="https://www.instagram.com/[Insert Random Instagram Handle]/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/[Insert Random Facebook Page]" target="_blank">Facebook</a></li>
+          <li><a href="https://[Insert Random Website URL]" target="_blank">X</a></li> 
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 Happy Minds</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
